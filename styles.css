@@ -114,3 +114,8 @@ footer {
   header { flex-direction: column; }
   .hero h1 { font-size: 2.2em; }
 }
+
+body {
+  background: url('images/fondo_marmol.png') no-repeat center center fixed;
+  background-size: cover;
+}
