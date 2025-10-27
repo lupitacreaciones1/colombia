@@ -1,12 +1,10 @@
 document.getElementById('year').textContent = new Date().getFullYear();
-
 function submitContact(e){
   e.preventDefault();
   const form = e.target;
   alert('Gracias, ' + form.name.value + '! Tu mensaje ha sido recibido (simulado).');
   form.reset();
 }
-
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click', function(e){
@@ -18,7 +16,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
     }
   });
 });
-
 // Reveal on scroll
 const reveals = document.querySelectorAll('.reveal');
 const obs = new IntersectionObserver(entries=>{
