@@ -16,7 +16,7 @@ body {
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
   font-family: 'Dancing Script', cursive;
-  background: url('images/fondo_marmol.png') no-repeat center center fixed;
+  background: url('images/fondo.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #333;
   line-height: 1.6;
