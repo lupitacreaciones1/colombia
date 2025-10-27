@@ -10,7 +10,7 @@
 /* --- BODY --- */
 body {
   font-family: 'Dancing Script', cursive;
-  background: url('images/fondo_marmol.png') no-repeat center center fixed;
+  background: url('images/fondo.jpg') no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
   color: #4a2c2a;
