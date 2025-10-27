@@ -1,172 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>LUPITA CREACIONES</title>
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lupita Creaciones</title>
+  <link rel="icon" type="image/png" href="images/logo_lupita.jpg" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header (franja blanca semitransparente, logo clicable) -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#inicio" title="Volver al inicio">
-        <img src="images/logo_lupita.jpg" alt="Lupita Creaciones" class="logo">
-      </a>
-
-      <nav id="nav" class="nav">
-        <a href="#inicio">Inicio</a>
-        <a href="#personalizacion">Personalización</a>
-        <a href="#pedidos">Pedidos</a>
-        <a href="#empaque">Empaque</a>
-        <a href="#galeria">Galería</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-
-      <div class="header-actions">
-        <div class="socials">
-          <a href="https://wa.me/573132209201" target="_blank" aria-label="WhatsApp">WA</a>
-          <a href="https://www.instagram.com/lupita_creaciones1/" target="_blank" aria-label="Instagram">IG</a>
-          <a href="https://www.tiktok.com/@lupitacreaciones1" target="_blank" aria-label="TikTok">TT</a>
-          <a href="https://www.facebook.com/lupitaCreaciones/" target="_blank" aria-label="Facebook">FB</a>
-        </div>
-        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">☰</button>
-      </div>
-    </div>
+  <header>
+    <img src="images/logo_lupita.jpg" alt="Lupita Creaciones" class="logo" />
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#personalizacion">Personalización</a>
+      <a href="#pedidos">Pedidos</a>
+      <a href="#empaque">Empaque</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
 
-  <!-- MAIN -->
-  <main>
-    <!-- Hero / Inicio -->
-    <section id="inicio" class="hero section">
-      <div class="container hero-inner">
-        <div class="hero-text reveal">
-          <h1>Lupita Creaciones</h1>
-          <p>Creaciones artesanales hechas con amor. Detalles personalizados para cada ocasión.</p>
-          <div class="cta-row">
-            <a class="btn" href="#galeria">Ver galería</a>
-            <a class="btn outline" href="#contacto">Contáctanos</a>
-          </div>
-        </div>
+  <section id="inicio" class="hero fade-in">
+    <h1>Lupita Creaciones</h1>
+    <p>Detalles hechos con amor, arte y dedicación 💕</p>
+  </section>
 
-        <div class="hero-media reveal">
-          <img src="images/personalizacion.png" alt="Personalización" class="media-img">
-        </div>
-      </div>
-    </section>
+  <section id="personalizacion" class="fade-in">
+    <h2>Personalización</h2>
+    <p>Diseñamos cada pieza según tus gustos y colores. Desde figuras hasta empaques únicos.</p>
+    <img src="images/personalizacion.png" alt="Personalización" class="img-section" />
+  </section>
 
-    <!-- Personalización -->
-    <section id="personalizacion" class="section">
-      <div class="container section-inner reveal">
-        <h2>Personalización</h2>
-        <div class="section-grid">
-          <div class="section-media">
-            <img src="images/personalizacion.png" alt="Personalización" class="card-img">
-          </div>
-          <div class="section-copy">
-            <p>Bordados, grabados y detalles a tu gusto. Trabajos personalizados y hechos a mano.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section id="pedidos" class="fade-in">
+    <h2>Pedidos por Encargo</h2>
+    <p>Cuéntanos tu idea y la convertimos en una creación artesanal única 🌷</p>
+    <img src="images/pedidos.png" alt="Pedidos" class="img-section" />
+  </section>
 
-    <!-- Pedidos por Encargo -->
-    <section id="pedidos" class="section">
-      <div class="container section-inner reveal">
-        <h2>Pedidos por Encargo</h2>
-        <div class="section-grid">
-          <div class="section-copy">
-            <p>Realizamos piezas por encargo con acabados cuidadosos y materiales de calidad.</p>
-            <ul class="features">
-              <li>Materiales: fieltro, lana y telas suaves</li>
-              <li>Opciones de color y tamaño</li>
-              <li>Acabados personalizados</li>
-            </ul>
-            <a class="btn" href="https://wa.me/573132209201" target="_blank">Pedir por WhatsApp</a>
-          </div>
-          <div class="section-media">
-            <img src="images/pedidos.png" alt="Pedidos por Encargo" class="card-img">
-          </div>
-        </div>
-      </div>
-    </section>
+  <section id="empaque" class="fade-in">
+    <h2>Empaque Elegante</h2>
+    <p>Presentación con estilo: cuidamos cada detalle para que tu regalo sea inolvidable.</p>
+    <img src="images/empaque.png" alt="Empaque Elegante" class="img-section" />
+  </section>
 
-    <!-- Empaque Elegante -->
-    <section id="empaque" class="section">
-      <div class="container section-inner reveal">
-        <h2>Empaque Elegante</h2>
-        <div class="section-grid">
-          <div class="section-media">
-            <img src="images/empaque.png" alt="Empaque Elegante" class="card-img">
-          </div>
-          <div class="section-copy">
-            <p>Presentación cuidada para que tu regalo sorprenda desde el primer momento.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Galería -->
-    <section id="galeria" class="section gallery-section">
-      <div class="container reveal">
-        <h2>Galería</h2>
-        <div class="gallery-grid">
-          <figure><img src="images/gal1.png" alt="Galería 1"></figure>
-          <figure><img src="images/gal2.jfif" alt="Galería 2"></figure>
-          <figure><img src="images/gal3.png" alt="Galería 3"></figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto" class="section">
-      <div class="container reveal">
-        <h2>Contacto</h2>
-        <div class="contact-grid">
-          <div class="contact-info">
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/573132209201" target="_blank">+57 313 220 9201</a></p>
-            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/lupita_creaciones1/" target="_blank">@lupita_creaciones1</a></p>
-            <p><strong>Facebook:</strong> <a href="https://www.facebook.com/lupitaCreaciones/" target="_blank">Lupita Creaciones</a></p>
-            <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@lupitacreaciones1" target="_blank">@lupitacreaciones1</a></p>
-            <p><strong>Dirección:</strong> Cra 36 #31-13, Barzal Bajo</p>
-          </div>
-
-          <div class="contact-form">
-            <form id="contactForm" onsubmit="submitContact(event)">
-              <label>Nombre
-                <input type="text" name="name" required>
-              </label>
-              <label>Mensaje
-                <textarea name="message" rows="4" required></textarea>
-              </label>
-              <div class="form-actions">
-                <button class="btn" type="submit">Enviar</button>
-                <a class="btn outline" href="https://wa.me/573132209201" target="_blank">Enviar por WhatsApp</a>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Lupita Creaciones · Hecho con amor 💕</p>
-      <div class="footer-socials">
-        <a href="https://www.instagram.com/lupita_creaciones1/" target="_blank">IG</a>
-        <a href="https://www.facebook.com/lupitaCreaciones/" target="_blank">FB</a>
-        <a href="https://www.tiktok.com/@lupitacreaciones1" target="_blank">TT</a>
-        <a href="https://wa.me/573132209201" target="_blank">WA</a>
-      </div>
+  <section id="galeria" class="fade-in">
+    <h2>Galería</h2>
+    <div class="gallery-grid">
+      <img src="images/lupitagaleria.jfif" alt="Galería 1" />
+      <img src="images/lupitagaleria3.png" alt="Galería 2" />
     </div>
+  </section>
+
+  <section id="contacto" class="fade-in">
+    <h2>Contacto</h2>
+    <p>📍 Cra 36 #31-13 Barzal Bajo</p>
+    <div class="socials">
+      <a href="https://wa.me/573132209201" target="_blank">WhatsApp</a>
+      <a href="https://www.instagram.com/lupita_creaciones1/" target="_blank">Instagram</a>
+      <a href="https://www.tiktok.com/@lupitacreaciones1" target="_blank">TikTok</a>
+      <a href="https://www.facebook.com/lupitaCreaciones/" target="_blank">Facebook</a>
+    </div>
+  </section>
+
+  <footer>
+    © LUPITA CREACIONES — DISEÑADO POR INGENIERO SERGIOLEX
   </footer>
 
-  <!-- WhatsApp flotante -->
-  <a class="whatsapp-float" href="https://wa.me/573132209201" target="_blank" aria-label="Escríbenos por WhatsApp">💬</a>
+  <a href="https://wa.me/573132209201" class="whatsapp-float" target="_blank">💬</a>
+
+  <script src="script.js"></script>
 </body>
 </html>
