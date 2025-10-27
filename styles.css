@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap');
 
+body {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  background-image: url('images/fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #4a2c2a;
+}
+
+
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
   font-family: 'Dancing Script', cursive;
