@@ -1,59 +1,135 @@
-:root{
-  --aguamarina:#6fe3d1;
-  --sandia:#ff5d7a;
-  --melocoton:#ffc89a;
-  --dark:#2b2b2b;
-  --muted:#6b6b6b;
-  --maxw:1100px;
-  --bg-overlay: rgba(255,255,255,0.6);
+:root {
+  --aguamarina: #b2f0e6; /* tono pastel suave */
+  --arena: #fff8ef;
+  --texto: #fffaf6;
+  --transparente: rgba(255,255,255,0.6);
 }
-*{box-sizing:border-box}
-body{font-family:system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:0;color:var(--dark);background-color:#f7f3ef}
-.container{max-width:var(--maxw);margin:0 auto;padding:1.25rem}
-.site-header{position:fixed;top:0;left:0;right:0;background:linear-gradient(180deg, rgba(255,255,255,0.65), rgba(255,255,255,0.55));backdrop-filter:blur(4px);border-bottom:1px solid rgba(0,0,0,0.05);z-index:40}
-.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
-.logo{height:56px}
-.nav{display:flex;gap:1rem;align-items:center}
-.nav a{color:var(--dark);text-decoration:none;font-weight:600;padding:.5rem}
-.socials{display:flex;gap:.5rem;align-items:center}
-.socials a{font-weight:700;text-decoration:none;padding:.4rem .6rem;border-radius:8px;background:transparent;border:1px solid rgba(0,0,0,0.06)}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--aguamarina);
+  color: var(--texto);
+  scroll-behavior: smooth;
+}
+
+/* Encabezado */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--transparente);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 10px 0;
+}
+
+.logo {
+  height: 60px;
+  border-radius: 10px;
+}
+
+.nav a {
+  margin: 0 10px;
+  color: var(--texto);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.socials a {
+  color: var(--texto);
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 /* Hero */
-.hero{padding:120px 0 60px;background-size:cover;background-position:center;position:relative}
-.hero-inner{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center}
-.hero h1{font-size:2.1rem;margin:0}
-.hero p{color:var(--muted)}
-.cta-row{margin-top:1rem;display:flex;gap:.75rem}
-.btn{background:var(--aguamarina);border:0;padding:.6rem 1rem;border-radius:10px;color:#fff;text-decoration:none;font-weight:700}
-.btn.outline{background:transparent;border:2px solid var(--dark);color:var(--dark)}
+.hero {
+  padding-top: 120px;
+  text-align: center;
+}
 
-/* Sections */
-.section{padding:3rem 0}
-.section-title{font-size:1.5rem;margin:0 0 1rem}
-.cards{display:flex;gap:1rem;flex-wrap:wrap}
-.card{background:var(--bg-overlay);backdrop-filter:blur(4px);border-radius:12px;padding:1rem;flex:1;min-width:220px;box-shadow:0 6px 18px rgba(0,0,0,0.06);text-align:center}
-.card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
-.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem}
-.gallery-grid img{width:100%;border-radius:8px;box-shadow:0 8px 20px rgba(0,0,0,0.06)}
+.hero h1 {
+  font-size: 2rem;
+}
 
-/* Contact */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-input,textarea{width:100%;padding:.6rem;border-radius:8px;border:1px solid #e6e6e6}
+.hero-img {
+  width: 250px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+/* Secciones */
+.section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.section img {
+  width: 280px;
+  max-width: 90%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 10px;
+}
+
+.gallery-grid img {
+  border-radius: 12px;
+}
+
+/* Botones */
+.btn {
+  background: var(--arena);
+  color: #333;
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid var(--arena);
+  color: var(--arena);
+}
 
 /* Footer */
-.site-footer{padding:1.25rem 0;background:#fff;border-top:1px solid #eee}
-.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:1rem;font-size:.95rem}
-
-/* Floating WhatsApp */
-.whatsapp-float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;padding:12px 14px;border-radius:50px;font-weight:700;text-decoration:none;box-shadow:0 8px 20px rgba(37,211,102,0.2);z-index:60}
-
-/* Reveal animations */
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}
-.reveal.visible{opacity:1;transform:none}
-
-/* Responsive */
-@media (max-width:900px){
-  .hero-inner{grid-template-columns:1fr}
-  .gallery-grid{grid-template-columns:repeat(2,1fr)}
-  .nav{display:none}
+.site-footer {
+  background: var(--transparente);
+  text-align: center;
+  padding: 20px;
+  color: var(--texto);
 }
+
+/* WhatsApp flotante */
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 20px;
+  padding: 12px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Animaciones */
+.reveal {opacity: 0; transform: translateY(20px); transition: .6s ease;}
+.reveal.visible {opacity: 1; transform: none;}
